@@ -1,0 +1,351 @@
+** Everything in python is object **
+** Every object contains methods **
+
+number
+-------
+number can be integer or float or hexa or octal.
+
+val  = 10
+bval = 3.3
+
+string
+-----------
+string is defined in single quotes or double or triple quotes .
+
+name = 'python programming'
+aname = "java progaming"
+bname = """unix shell scripting"""
+
+list ( similar to array in C)
+-----------------------------
+list contains set of elements.
+Elements can be set of numbers or strings or any combination.
+
+alist = [10,20,30,4,50]
+blist = ["java",3,"unix","java"]
+
+tuple ( immutable , unchangeable , uneditable )
+-----
+tuple contains set of elements.
+Elements can be set of numbers or strings or any combination.
+*** Elements inside tuple cant be modified directly ***
+
+
+atup = (34,23,24,3)
+
+dictionary  ( hashmap , hash , associate array , json )
+--------------------------------
+
+dictionary contains elements in the form of keys and values.
+
+syntax:    object = { key:value , key:value , key:value }
+           book   = {'chao':10 ,'chap2':20 , 'chap3':30 }
+           book   = {'chap1':10 ,'chap2':20 , 'chap1':100 }
+      
+
+set
+-----
+set is unordered collection of UNIQUE eelements of the same type.
+
+
+aset = {10,20,20,10,20,30}
+
+
+
+commenting in python
+---------------------
+There are 2 ways of commenting 
+
+1. single line comment
+-----------------------
+# this is single line comment
+
+
+2. multi line comment
+
+'''
+this is 
+multiline 
+comment
+
+'''
+
+"""
+this is
+multiline
+comment
+"""
+
+
+
+working with files
+-------------------
+
+working with flat files ( txt csv  conf  log .prop  .... )
+-----------------------
+
+
+reading the file
+---------------
+
+syntax:   object = open(filename,mode)
+example:    fr  = open('abc.txt','r')   # read mode
+            fw  = open('abc.txt','w')   # write mode
+                                        # if the file is not existing .. file gets created first
+                                        # if the file is already existing .. it overwrite the content first
+
+            fa  = open('abc.txt','a')   # append mode
+                                        # if the file is not existing .. file gets created first
+                                        # if the file is already existing .. it appends the content to the end of the file
+
+
+
+closing the file
+----------------
+fobj.close()
+
+
+reading the file
+-------------------
+
+
+- method1 :reading the file using file object
+- method2 :fobj.readlines()
+- method3 :fobj.read()
+- method4 :using csv library
+- method5 :using pandas library
+
+
+
+
+working with third party files ( pdf   xlsx  docx  pptx  mp4  ..... )
+--------------------------------
+
+
+
+----------------------
+dir(__builtin__)  
+----------------------
+will display all the list of builtin exceptions and functions
+
+
+
+
+exception handling
+----------------------
+
+There are 2 types of errors
+
+1. syntax error
+
+
+2. semantic error or runtime error
+
+
+
+Handling the errors that occurs during the runtime is known as exception handling
+
+
+
+try    ( mandate)
+except ( mandate)
+else   ( optional)
+finally( optional )
+raise
+
+
+
+library | package | module
+--------------------------
+Every library contains set of methods of some particular task.
+
+There are 2 types of libraries
+
+
+- builtin libraries
+----------------------
+Builtin libraries are generally used(string manipulations , math operations , file mgmt , directories handling, local system, date and time etc ....) by everyone and all the builtins are installed with python.
+
+
+- third party libraries
+-------------------------
+Depending on the requirement(web development, ML ,data analytics, testing , network related ...) developer has to install the third party library from www.pypi.org
+
+
+mysql database
+-----------------
+
+
+
+display all exiting databases
+----------------------------
+show databases;
+
+create database
+-----------------
+create database adultinfo;
+
+
+access your database
+--------------------
+use adultinfo;
+
+creating table
+---------------------
+create table adult(workclass varchar(100) , occupation varchar(100) , education varchar(100) );
+
+
+inserting records
+-----------------------
+insert into adult values('State-gov','Adm-clerical' , 'Bachelors');
+insert into adult values('Private','Handlers-cleaners','Bachelors');
+
+display records
+-----------------
+select * from adult;
+
+
+
+steps
+-------
+
+step1 : connect to db
+step2 : define query
+step3 : execute query
+step4 : fetch output
+step5 : close the conection
+
+
+
+
+function | definition | block | subroutine
+-------------------------------------------
+
+- builtin functions
+- user defined functions
+
+
+argument passing
+-------------------
+
+fixed arguments
+default argumnets
+keyword arguments
+variable length arguments
+
+
+
+
+
+
+
+ 
+
+
+
+
+There are two ways of programming
+
+- procedural style ( top-down approch)
+- object oriented style ( class and object)  --- OOPs principles are global principles common for all the languages
+
+
+Object oriented programming
+---------------------------
+- class and object
+- escapsulation
+-  data hding
+- inheritance
+- polymorphism
+
+
+- the basic concepts in OOP are 
+   1. class
+   2. object
+
+
+
+class
+-------
+Every class contains data members and member functions
+
+object
+-------
+object is the instance of the class.
+
+
+The first parameter in the class  will be always self.
+
+self refers to the current object
+
+
+constructor
+------------
+constructor will be invoked automatically 
+when the object is created
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
